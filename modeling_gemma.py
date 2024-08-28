@@ -83,7 +83,7 @@ class PaliGemmaConfig:
         self.text_config = text_config
         self.text_config = GemmaConfig(**text_config, pad_token_id=pad_token_id)
         self.vocab_size = self.text_config.vocab_size
-        self.text_config.num_image_tokens = (self.vision_config.image_size//self.vision_config.patch_size)
+        self.text_config.num_image_tokens = (self.vision_config.image_size//self.vision_config.patch_size)**2
         self.vision_config.projection_dim = projection_dim
 class GemmaRMSNorm(nn.Module):
     def __init__(self, dim: int, eps: float = 1e-6):
