@@ -1,2 +1,2 @@
 # PaliGemma-VLM-
-PaliGemma 3B model , implemantation with pytorch 
+PaliGemma 3B model , implementation with pytorch 
